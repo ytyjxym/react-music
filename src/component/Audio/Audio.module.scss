@@ -1,0 +1,51 @@
+.audio__foot__bg{
+  height:1rem;
+  width:100%;
+  background-color: rgba(255,255,255,.9);
+}
+.audioImg{
+  width:.6rem;
+  height:.6rem;
+}
+.audio{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:.8rem;
+  padding:0 .1rem;
+  font-size:.12rem;
+  border-top:.01rem solid #eee;
+  background-color: rgba(255,255,255,.9);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.overflow{
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.progress{
+  flex:5;
+  padding-right:.1rem;
+}
+.audioBg{
+  flex:1;
+}
+.audioMain{
+  width:.4rem;
+  flex:2;
+}
+.audioMain div{
+  //font-size:.16rem;
+  margin-bottom:.06rem;
+  color:#333
+}
+.audioMain p{
+  font-size:.12rem;
+  color:#999
+}
+.audioBtn{
+  flex:1;
+}

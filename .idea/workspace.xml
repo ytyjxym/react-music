@@ -2,20 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bef7241b-100c-4cba-bcbb-97f3f7514101" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/icon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/baseUrl/baseUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Audio/Audio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Button/Button.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Grid/Grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Grid/Grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Progress/Progress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Swiper/Swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Swiper/Swiper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/library/Drawer/Drawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/library/List/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/library/Loading/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Error404/Error404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/axios/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/bg.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/20190217174558_yjygg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/20191109080339_heeik.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/chat_background_1536x2048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/screen_1536x2048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/APP/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/APP/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/font.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/font.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PlayList/Playlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,14 +71,45 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1TmbKQ89Dllf1rcm9C40J8mg0CY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="ts.external.directory.path" value="E:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\上课三阶段\react\demo\src\views\PlayList" />
+      <recent name="G:\上课三阶段\react\demo\src\views\Home" />
+      <recent name="G:\上课三阶段\react\demo\src\plugins\redux" />
+      <recent name="G:\上课三阶段\react\demo\src\plugins" />
+      <recent name="G:\上课三阶段\react\demo\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,6 +123,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="q.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/q.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.q.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,11 +143,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574068153834</updated>
-      <workItem from="1574068155423" duration="240000" />
+      <workItem from="1574068155423" duration="6806000" />
+      <workItem from="1574161333786" duration="10255000" />
+      <workItem from="1574252702061" duration="1483000" />
+      <workItem from="1574336028822" duration="8084000" />
+      <workItem from="1574420650096" duration="8656000" />
+      <workItem from="1574474296641" duration="10694000" />
+      <workItem from="1574682647604" duration="5992000" />
+      <workItem from="1574761378605" duration="58000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
