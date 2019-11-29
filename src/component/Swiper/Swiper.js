@@ -9,6 +9,7 @@ const BgElement = Element.BgElement;
 
     class Swipe extends React.Component{
         componentDidMount(){
+
             this.props.getBanner()
         }
         render = () =>(
@@ -18,6 +19,9 @@ const BgElement = Element.BgElement;
                             <Element
                                 prefixCls="banner-user-elem"
                                 key={index}
+                                // onClick={()=>{
+                                //     console.log(this.props.banner)
+                                // }}
                             >
                                 <BgElement
                                     key={index}

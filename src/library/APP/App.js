@@ -9,6 +9,7 @@ import Error404 from "../../pages/Error404/Error404";
 import Loading from "../Loading/Loading";
 import List from "../List/List";
 import store from "../../plugins/redux";
+import Search from "../../pages/Search/Search";
 // import Swiper from '../../component/Swiper/Swiper'
 // import Grid from "../../component/Grid/Grid";
 // import ListExample from "../List/List";
@@ -25,12 +26,20 @@ class App extends React.Component{
     state={
 
     }
+    componentDidMount() {
+        if(window.localStorage.getItem('xymSongList')){
+            store.dispatch({type:"INIT_MYLIST",payload:JSON.parse(window.localStorage.getItem('xymSongList'))})
+        }
+    }
     static getDerivedStateFromProps(nextProps){
         let path = nextProps.location.pathname
         if(/home/.test(path)){
             store.dispatch({type:'IS_HOME',payload:true})
         }else{
             store.dispatch({type:'IS_HOME',payload:false})
+        }
+        if(!(/Search/.test(path))){
+            store.dispatch({type:'CLEAR_SEARCH'})
         }
         return null
     }
@@ -48,6 +57,11 @@ class App extends React.Component{
                     <Route
                         path={'/list'}
                         component={List}
+                    >
+                    </Route>
+                    <Route
+                        path={'/Search'}
+                        component={Search}
                     >
                     </Route>
                     <Redirect

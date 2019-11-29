@@ -13,30 +13,56 @@ export default (state,{type,payload})=>{
             return {...state,AudioPercent:payload};
 
         case 'UPDATE_PLAYLIST':
+            // console.log(payload)
             return {...state,PlayList:payload.playlists};
 
+        case "INIT_MYLIST":
+            // console.log(payload,state.myList)
+
+            return {...state,myList:payload};
+        case 'UPDATE_MYLIST':
+            // console.log(payload,state.myList)
+            let newMyList = state.myList;
+            // console.log(newMyList)
+            newMyList.push(payload)
+            // console.log(newMyList, state.myList)
+
+            window.localStorage.setItem('xymSongList', JSON.stringify(newMyList))
+            return {...state,myList:newMyList};
+
+        case 'CHANGE_LISTTYPE':
+            return {...state,listType:payload.listType,listName:payload.listName || '我的歌单'};
+
+        case 'DEL_SONGLIST':
+            return {...state,SongList:[],listName:''};
+
         case 'UPDATE_SONGLIST':
-            return {...state,SongList:payload.playlist.tracks};
+            // console.log(payload)
+            return {...state,SongList:payload.playlist.tracks,listType:'songList',listName:'当前歌单'};
+        case 'UPDATE_SEARCHLIST':
+            // console.log(payload.result.songs)
+            // console.log(state)
+            return {...state,searchList:payload.result.songs,listType:'search',listName:'搜索结果'};
 
         case 'UPDATE_NOWAUDIO':
 
             return {...state,nowAudio:payload};
+        case 'CLEAR_SEARCH':
 
+            return {...state,searchList:[]};
         case 'LOADING' :
-            console.log(payload)
             return {...state,showLoading:payload};
         case 'UPDATE_SONGINFO' :
-            console.log(payload.songs)
             return {...state,SongInfo:payload.songs[0]};
         case 'VIEW_AUDIO' :
-            console.log(payload)
             return {...state,viewAudio:payload};
         case 'RESET_AUDIO' :
-            console.log(payload)
             return {...state,AudioPlay:payload};
         case 'IS_HOME' :
-            console.log(payload)
             return {...state,isHome:payload};
+        case 'VIEW_DRAWER' :
+            let newBDrawer = !state.bDrawer
+            return {...state,bDrawer:newBDrawer};
         default:
             return state;
 

@@ -5,7 +5,7 @@ class App1 extends React.Component {
         open: true,
     }
     onOpenChange = (...args) => {
-        console.log(args);
+        // console.log(args);
         this.setState({ open: !this.state.open });
     }
     render() {

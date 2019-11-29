@@ -2,68 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bef7241b-100c-4cba-bcbb-97f3f7514101" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/icon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/baseUrl/baseUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Audio/Audio.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Button/Button.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Grid/Grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Grid/Grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Progress/Progress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Swiper/Swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/Swiper/Swiper.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Drawer/Drawer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/List/List.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/library/Loading/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Error404/Error404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/axios/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/plugins/redux/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/bg.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/20190217174558_yjygg.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/20191109080339_heeik.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/chat_background_1536x2048.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/screen_1536x2048.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Grid/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Grid/Grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Swiper/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Swiper/Swiper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library/APP/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/APP/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Drawer/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Drawer/Drawer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/font.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/font.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PlayList/Playlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/List/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Error404/Error404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error404/Error404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/state.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,6 +106,10 @@
       <workItem from="1574474296641" duration="10694000" />
       <workItem from="1574682647604" duration="5992000" />
       <workItem from="1574761378605" duration="58000" />
+      <workItem from="1574938141772" duration="7804000" />
+      <workItem from="1574946099717" duration="3502000" />
+      <workItem from="1574988697832" duration="1101000" />
+      <workItem from="1574990416083" duration="1258000" />
     </task>
     <servers />
   </component>

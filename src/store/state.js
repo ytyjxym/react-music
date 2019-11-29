@@ -14,4 +14,10 @@ export default {
     SongInfo:{},
     viewAudio:false,
     isHome:true,
+    listName:'',
+    listType:'myList',
+    isSearch:false,
+    search:false,
+    myList:[],
+    searchList:[]
 }

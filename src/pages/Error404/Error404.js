@@ -3,12 +3,7 @@ export default class Error404 extends React.Component{
     render = ()=>{
         return(
             <ul>
-                <li>错误错</li>
-                <li>错误错</li>
-                <li>错误错</li>
-                <li>错误错</li>
-                <li>错误错</li>
-                <li>错误错</li>
+                <li>出错了</li>
             </ul>
         )
     }

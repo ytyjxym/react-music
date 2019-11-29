@@ -2,6 +2,7 @@ import React from 'react';
 import style from './/Audio.module.scss';
 import {connect} from 'react-redux'
 // import {update} from "../../store/actions";
+import {withRouter} from 'react-router-dom'
 import store from '../../plugins/redux'
 import MyProgress from "../Progress/Progress";
 class Audio extends React.Component{
@@ -33,13 +34,17 @@ class Audio extends React.Component{
                                 <i className={'iconfont icon-pause-circle'} style={{paddingRight:'.05rem'}}  onClick={(event)=>this.stop(event)}></i> :
                                 <i className={'iconfont icon-play-circle'} style={{paddingRight:'.05rem'}}  onClick={(event)=>this.play(event)}></i>
                         }
-                        <i className={'iconfont icon-indent'}></i>
+                        <i className={'iconfont icon-indent'} onClick={(event)=>this.showMylist(event)}></i>
                     </div>
                 </div>
                 <audio src={`${this.props.nowAudio.url}`} ref={'audio'} />
                 <div className={style['audio__foot__bg']}></div>
             </div>
         )
+    }
+    showMylist = async (e) => {
+        await store.dispatch({type:'CHANGE_LISTTYPE',payload:{listType:'myList',listName:'我的歌单'}})
+        this.props.history.push('/list')
     }
     stop = (e) => {
         this.refs.audio.pause();
@@ -84,4 +89,4 @@ let mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Audio)
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Audio))

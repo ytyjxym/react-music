@@ -4,7 +4,7 @@ import {update} from '../../store/actions'
 import {connect} from 'react-redux'
 import {Link} from "react-router-dom";
 import './Grid.scss'
-// import store from "../../plugins/redux";
+import store from "../../plugins/redux";
 // const data1 = Array.from(new Array(9)).map((_val, i) => ({
 //     icon: 'https://gw.alipayobjects.com/zos/rmsportal/nywPmnTAvTmLusPxHPSu.png',
 //     text: `name${i}`,
@@ -37,6 +37,7 @@ class GridExample extends React.Component{
                       <Link style={{ padding: '.125rem',display:'block' }}
                             to={{pathname:`/list`,listId:dataItem.id,search:`?id=${dataItem.id}`}}
                             onClick={async (el)=>{
+                                await store.dispatch({type:'CHANGE_LISTTYPE',payload:{listType:'songList',listName:'所选歌单'}})
                                 await this.props.getSongList(dataItem.id)
                       }}>
                           <img src={dataItem.icon} style={{ width: '1.5rem', height: '1.5rem' }} alt="" />

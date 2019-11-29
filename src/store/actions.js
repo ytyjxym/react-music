@@ -1,6 +1,5 @@
 import axios from '../plugins/axios'
 const update = ({api,limit=10,offset=null,id=null,type})=>dispatch=>{
-    console.log(1)
     return (
         axios({
             // url:id ? `${axios.baseUrl}${api}/${id}` : `${axios.baseUrl}${api}`,
@@ -8,7 +7,7 @@ const update = ({api,limit=10,offset=null,id=null,type})=>dispatch=>{
             params:offset ? {limit,offset} : null
         })
             .then(res=>{
-                    console.log(res.data)
+                    // console.log(res.data)
                     dispatch({type,payload:res.data})
                 }
             )
