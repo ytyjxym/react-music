@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bef7241b-100c-4cba-bcbb-97f3f7514101" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/Observe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/lrcInit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/timeTrans.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Progress/Progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Progress/Progress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/List/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/state.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +96,7 @@
       <workItem from="1574988697832" duration="1101000" />
       <workItem from="1574990416083" duration="2049000" />
       <workItem from="1575077806210" duration="8760000" />
+      <workItem from="1575100820975" duration="3230000" />
     </task>
     <servers />
   </component>

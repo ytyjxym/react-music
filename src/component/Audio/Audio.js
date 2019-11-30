@@ -59,29 +59,49 @@ class Audio extends React.Component{
     }
     stop = (e) => {
         this.refs.audio.pause();
-        this.timer = null;
+        clearInterval(this.timer)
         store.dispatch({type:'PLAY_AUDIO',payload:false})
     }
     play = (e) => {
         this.refs.audio.play();
-        store.dispatch({type:"UPDATE_SONGDURATION",payload:this.refs.audio.duration})
+        store.dispatch({type:"UPDATE_SONGDURATION",payload:this.refs.audio.duration});
+        console.log(this.props.lrc);
+        this.idx = 0;
         this.timer = setInterval(
             async ()=>{
                 // console.log(this.refs.audio.currentTime*1000)
                 // this.props.lrc.lycTime.map((item,index)=>{
                 //     console.log(item)
                 // })
-                this.props.lrc.lycTime && this.props.lrc.lycTime.forEach((item,index)=>{
-                    if(this.refs.audio.currentTime * 1000 >= item - 100){
-                        store.dispatch({type:'UPDATE_NOWLRC',payload:this.props.lrc.lycWord[index]})
+                // this.props.lrc.lycTime && this.props.lrc.lycTime.some(async (item,index)=>{
+                //     if(this.refs.audio.currentTime * 1000 >= +item-100 ){
+                //         console.log(+item-100)
+                //         await store.dispatch({type:'UPDATE_NOWLRC',payload:this.props.lrc.lycWord[index]})
+                //     }
+                //     // return (this.refs.audio.currentTime * 1000 >= +item-100 && +item !== 0)
+                // })
+                if(this.props.lrc.lycTime) {
+                     // for (let i in this.props.lrc.lycTime) {
+                    for(let i = this.idx; i<this.props.lrc.lycTime.length;i++){
+                        // console.log(i)
+                        // console.log(this.props.lrc.lycTime[i])
+                        // console.log(this.refs.audio.currentTime * 1000 >= +this.props.lrc.lycTime[i] - 100)
+                        if (this.refs.audio.currentTime * 1000 >= +this.props.lrc.lycTime[i] + 100) {
+                            store.dispatch({type: 'UPDATE_NOWLRC', payload: this.props.lrc.lycWord[i]})
+                            this.idx++;
+                            break;
+                        }else{
+                            break;
+                        }
                     }
-                })
+                }
                 await this.setState({
                     currentTime:this.refs.audio.currentTime,
                     duration:this.props.songDuration
                 })
                 await store.dispatch({type:'PLAY_PROGRESS',payload:(this.refs.audio.currentTime / this.refs.audio.duration)*100})
-            }
+            },
+            50
         )
         store.dispatch({type:'PLAY_AUDIO',payload:true})
     }
