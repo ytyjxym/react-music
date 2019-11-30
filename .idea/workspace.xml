@@ -4,6 +4,7 @@
     <list default="true" id="bef7241b-100c-4cba-bcbb-97f3f7514101" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +97,7 @@
       <workItem from="1574988697832" duration="1101000" />
       <workItem from="1574990416083" duration="2049000" />
       <workItem from="1575077806210" duration="8760000" />
-      <workItem from="1575100820975" duration="3230000" />
+      <workItem from="1575100820975" duration="4324000" />
     </task>
     <servers />
   </component>

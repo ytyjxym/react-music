@@ -23,7 +23,7 @@ export default (state,{type,payload})=>{
             return {...state,myList:payload};
         case 'UPDATE_MYLIST':
             // console.log(payload,state.myList)
-            console.log(!state.myList.find(item=>item.id===payload.id))
+            // console.log(!state.myList.find(item=>item.id===payload.id))
             if(!state.myList.find(item=>item.id===payload.id)){
                 let newMyList = state.myList;
                 // console.log(newMyList)
