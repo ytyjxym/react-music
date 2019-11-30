@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bef7241b-100c-4cba-bcbb-97f3f7514101" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Observe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/lrcInit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/timeTrans.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Audio/Audio.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Grid/Grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Grid/Grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Swiper/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Swiper/Swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/APP/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/APP/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Drawer/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Drawer/Drawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Progress/Progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Progress/Progress.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/List/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Error404/Error404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Error404/Error404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Search/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/library/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Loading/Loading.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/state.js" afterDir="false" />
     </list>
@@ -109,7 +104,8 @@
       <workItem from="1574938141772" duration="7804000" />
       <workItem from="1574946099717" duration="3502000" />
       <workItem from="1574988697832" duration="1101000" />
-      <workItem from="1574990416083" duration="1258000" />
+      <workItem from="1574990416083" duration="2049000" />
+      <workItem from="1575077806210" duration="8760000" />
     </task>
     <servers />
   </component>

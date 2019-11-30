@@ -2,6 +2,7 @@ import { List } from 'antd-mobile';
 import React from 'react';
 import {update} from "../../store/actions";
 import {connect} from "react-redux";
+// import store from "../../plugins/redux";
 const Item = List.Item;
 const Brief = Item.Brief;
 class ListEX extends React.Component {
@@ -9,7 +10,6 @@ class ListEX extends React.Component {
         // console.log(this.props.location.search)
         if(this.props.listType === 'songList' && this.props.SongList.length === 0 && this.props.location) this.props.getSongList(this.props.location.search.split('?')[1].split('=')[1])
     }
-
     render() {
         return (<div>
             <List renderHeader={() => <div style={{color:'#000',fontSize:'.26rem'}}>{this.props.listName}</div>} className="my-list" >
@@ -26,6 +26,7 @@ class ListEX extends React.Component {
                                 // console.log(item.al.id)
                                 await this.props.getSongInfo(item.id)
                                 await this.props.getSong(item.id)
+                                await this.props.getLrc(item.id)
                                 this.props.viewAudio()
                                 this.props.resetAudio()
                             }}
@@ -48,6 +49,7 @@ class ListEX extends React.Component {
                                 // console.log(item.al.id)
                                 await this.props.getSongInfo(item.id)
                                 await this.props.getSong(item.id)
+                                await this.props.getLrc(item.id)
                                 this.props.viewAudio()
                                 this.props.resetAudio()
                             }}
@@ -68,9 +70,9 @@ class ListEX extends React.Component {
                             onClick={async (el) => {
                                 if(this.props.listType !== 'myList') this.props.updateMyList(item)
                                 // console.log(item.al.id)
-
                                 await this.props.getSongInfo(item.id)
                                 await this.props.getSong(item.id)
+                                await this.props.getLrc(item.id)
                                 this.props.viewAudio()
                                 this.props.resetAudio()
                             }}
@@ -102,6 +104,10 @@ let mapDispatchToProps = dispatch => {
                 api: `/song/url?id=${id}`,
                 type:'UPDATE_AUDIO'
             })),
+        getLrc:(id)=> dispatch(update({
+            api: `/lyric?id=${id}`,
+            type:'UPDATE_LRC'
+        })),
         getSongList:(id)=>dispatch(update({
             api: `/playlist/detail?id=${id}`,
             type:'UPDATE_SONGLIST'

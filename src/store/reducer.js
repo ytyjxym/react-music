@@ -1,3 +1,4 @@
+import lrcInit from "../utils/lrcInit";
 export default (state,{type,payload})=>{
     switch (type) {
         case'UPDATE_BANNER':
@@ -22,17 +23,34 @@ export default (state,{type,payload})=>{
             return {...state,myList:payload};
         case 'UPDATE_MYLIST':
             // console.log(payload,state.myList)
-            let newMyList = state.myList;
-            // console.log(newMyList)
-            newMyList.push(payload)
-            // console.log(newMyList, state.myList)
+            console.log(!state.myList.find(item=>item.id===payload.id))
+            if(!state.myList.find(item=>item.id===payload.id)){
+                let newMyList = state.myList;
+                // console.log(newMyList)
+                newMyList.push(payload)
+                // console.log(newMyList, state.myList)
+                window.localStorage.setItem('xymSongList', JSON.stringify(newMyList))
+                return {...state,myList:newMyList};
+            }
+            return state
 
-            window.localStorage.setItem('xymSongList', JSON.stringify(newMyList))
-            return {...state,myList:newMyList};
 
         case 'CHANGE_LISTTYPE':
             return {...state,listType:payload.listType,listName:payload.listName || '我的歌单'};
+        case 'UPDATE_NOWLRC':
+            return {...state,nowLrc:payload};
+        case 'UPDATE_LRC':
 
+            if(payload.nolyric){
+
+                return {...state,lrc:{},nowLrc:'  '};
+            }
+            lrcInit.lrc = payload.lrc.lyric;
+            let newLrc = lrcInit.lrc
+            return {...state,lrc:newLrc,};
+        case 'UPDATE_SONGDURATION':
+
+            return {...state,songDuration:payload,};
         case 'DEL_SONGLIST':
             return {...state,SongList:[],listName:''};
 

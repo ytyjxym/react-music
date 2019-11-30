@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './/Audio.module.scss';
 import {connect} from 'react-redux'
+import timeTrans from "../../utils/timeTrans";
 // import {update} from "../../store/actions";
 import {withRouter} from 'react-router-dom'
 import store from '../../plugins/redux'
@@ -14,6 +15,10 @@ class Audio extends React.Component{
     //     // this.props.getSongInfo(this.props.nowAudio.id)
     //     console.log(this.props.SongInfo)
     // }
+    state={
+        currentTime:0,
+        duration:0,
+    }
     render = ()=>{
         return(
             <div>
@@ -26,9 +31,15 @@ class Audio extends React.Component{
                         {this.props.SongInfo.al && <p>{this.props.SongInfo.ar[0].name}</p>}
                     </div>
                     <div className={style.progress}>
+                        <div className={style.lrc}>
+                        {
+                            this.props.nowLrc
+                        }
+                        </div>
                         <MyProgress />
                     </div>
                     <div className={style.audioBtn}>
+                        <span>{timeTrans(this.state.currentTime)}/{timeTrans(this.state.duration)}</span>
                         {
                             this.props.AudioPlay ?
                                 <i className={'iconfont icon-pause-circle'} style={{paddingRight:'.05rem'}}  onClick={(event)=>this.stop(event)}></i> :
@@ -53,13 +64,26 @@ class Audio extends React.Component{
     }
     play = (e) => {
         this.refs.audio.play();
+        store.dispatch({type:"UPDATE_SONGDURATION",payload:this.refs.audio.duration})
         this.timer = setInterval(
-            ()=>{
-                store.dispatch({type:'PLAY_PROGRESS',payload:(this.refs.audio.currentTime / this.refs.audio.duration)*100})
+            async ()=>{
+                // console.log(this.refs.audio.currentTime*1000)
+                // this.props.lrc.lycTime.map((item,index)=>{
+                //     console.log(item)
+                // })
+                this.props.lrc.lycTime && this.props.lrc.lycTime.forEach((item,index)=>{
+                    if(this.refs.audio.currentTime * 1000 >= item - 100){
+                        store.dispatch({type:'UPDATE_NOWLRC',payload:this.props.lrc.lycWord[index]})
+                    }
+                })
+                await this.setState({
+                    currentTime:this.refs.audio.currentTime,
+                    duration:this.props.songDuration
+                })
+                await store.dispatch({type:'PLAY_PROGRESS',payload:(this.refs.audio.currentTime / this.refs.audio.duration)*100})
             }
         )
         store.dispatch({type:'PLAY_AUDIO',payload:true})
-
     }
 }
 
@@ -70,6 +94,9 @@ let mapStateToProps = (state) => {
         AudioPlay:state.AudioPlay,
         AudioPercent:state.AudioPercent,
         SongInfo:state.SongInfo,
+        lrc:state.lrc,
+        songDuration:state.songDuration,
+        nowLrc:state.nowLrc
     }
 }
 let mapDispatchToProps = dispatch => {

@@ -19,5 +19,8 @@ export default {
     isSearch:false,
     search:false,
     myList:[],
-    searchList:[]
+    searchList:[],
+    lrc:{},
+    songDuration:'',
+    nowLrc:'',
 }
