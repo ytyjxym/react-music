@@ -3,23 +3,18 @@ export default (state,{type,payload})=>{
     switch (type) {
         case'UPDATE_BANNER':
             return {...state,banner:payload.banners};
-
         case'UPDATE_AUDIO':
             return {...state,nowAudio:payload.data[0]};
-
         case'PLAY_AUDIO':
             return {...state,AudioPlay:payload};
-
         case 'PLAY_PROGRESS':
             return {...state,AudioPercent:payload};
-
         case 'UPDATE_PLAYLIST':
             // console.log(payload)
             return {...state,PlayList:payload.playlists};
 
         case "INIT_MYLIST":
             // console.log(payload,state.myList)
-
             return {...state,myList:payload};
         case 'UPDATE_MYLIST':
             // console.log(payload,state.myList)
@@ -33,16 +28,12 @@ export default (state,{type,payload})=>{
                 return {...state,myList:newMyList};
             }
             return state
-
-
         case 'CHANGE_LISTTYPE':
             return {...state,listType:payload.listType,listName:payload.listName || '我的歌单'};
         case 'UPDATE_NOWLRC':
             return {...state,nowLrc:payload};
         case 'UPDATE_LRC':
-
             if(payload.nolyric){
-
                 return {...state,lrc:{},nowLrc:'  '};
             }
             lrcInit.lrc = payload.lrc.lyric;
